@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.field {
+    @apply flex flex-col justify-center mb-3;
+}
+
+.field > label {
+    @apply text-brown font-title font-semibold my-0;
+}
+
+.field > input {
+    @apply border-2 border-brown rounded-lg px-2 py-1.5 w-full text-black text-sm;
+}
+
+.edit-article .field > input {
+    @apply w-full ;
+}
+.edit-article .field > select, .edit-article .field > textarea {
+    @apply text-black;
+}
+
+.edit-article .field > label {
+    @apply text-xl;
+}
+.create-article .field > input {
+    @apply w-full;
+} 
+
+.create-article .field > select, .create-article .field > textarea {
+    @apply text-black;
+}
+
+.create-article .field > label {
+    @apply text-xl;
+}
+
+.edit-article #title-label {
+    @apply text-2xl;
+}
+
+.create-article #title-label {
+    @apply text-2xl;
+}
+
+.field > input:focus {
+    @apply outline-none;
+}
+
+.error {
+    @apply h-fit text-red text-sm font-normal font-title italic mt-0.5;
+}
+
+/*Contacts*/
+
+.contact-field {
+    @apply flex flex-col justify-center relative;
+}
+
+.icon-box {
+    @apply flex flex-row items-center justify-start bg-white p-4 rounded-lg relative mb-7;
+}
+
+.icon {
+    @apply text-red text-2xl rounded-full p-5 flex items-center justify-center;
+}
+
+.text {
+    @apply mt-2;
+}
+
+.text h2 {
+    @apply font-title font-bold text-black text-lg;
+}
+
+.text a {
+    @apply hover:text-red text-base;
+}
